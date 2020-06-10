@@ -9,6 +9,7 @@
   margin: 2.3% 1.4% 0%;
   justify-content: space-between;
   padding: 1.5% 0 0.8% 1.5%;
+  position: relative;
 }
 
 .card:hover {
@@ -26,4 +27,15 @@ img {
 hr {
   height: 1px;
   background-color: #eb9788;
+}
+
+.newNoteBtn {
+  border-radius: 12px;
+  color: black;
+  border: 2px solid #eb9788;
+  padding: 1%;
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  width: 35%;
 }

@@ -3,7 +3,7 @@ import { Data } from './data.model';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const localUrl = 'http://localhost:3004/notes';
+const localUrl = 'http://localhost:3000/notes';
 
 @Injectable({
   providedIn: 'root',
