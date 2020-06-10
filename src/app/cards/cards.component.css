@@ -1,0 +1,24 @@
+.card {
+  box-shadow: 0 4px 8px 0 #ffd5ab;
+  background-color: #fff2e5;
+  transition: 0.3s;
+  width: 29%;
+  height: 23rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 2.3% 1.4% 0%;
+  justify-content: space-between;
+  padding: 1.5% 0 0.8% 1.5%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 7px;
+}
