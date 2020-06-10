@@ -22,3 +22,8 @@ img {
 .container {
   padding: 2px 7px;
 }
+
+hr {
+  height: 1px;
+  background-color: #eb9788;
+}
