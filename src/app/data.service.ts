@@ -28,4 +28,9 @@ export class DataService {
     console.log(this.noteData);
     return this.noteData;
   }
+
+  deleteData() {
+    console.log('DeleteData was called.');
+    // this.http.delete(localUrl, { id: '2' });
+  }
 }

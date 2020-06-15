@@ -1,6 +1,13 @@
 <div class="card">
   <h1>
     <b> {{ notes.Title }} </b>
+    <button
+      class="deleteNoteBtn"
+      (click)="deleteDataFunc()"
+      style="font-size: 10px;"
+    >
+      <i class="fa fa-trash-o fa-3x"></i>
+    </button>
   </h1>
   <hr />
   <div class="container">

@@ -36,6 +36,15 @@ hr {
   padding: 1%;
   position: absolute;
   bottom: 4%;
-  right: 4%;
+  left: 4%;
   width: 35%;
+  background-color: #fff2e5;
+}
+
+.deleteNoteBtn {
+  position: absolute;
+  border-radius: 12px;
+  right: 4%;
+  border: 2px solid #eb9788;
+  background-color: #fff2e5;
 }

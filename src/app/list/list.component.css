@@ -1,0 +1,23 @@
+.newNoteBtn {
+  /* position: absolute; */
+  border-radius: 12px;
+  /* bottom: 4%;
+  left: 40%;
+  right: 55%; */
+  margin: 30px 0 20px;
+  margin-left: 40.5%;
+  height: 80px;
+  width: 20%;
+  border: 2px solid #fff2e5;
+  background-color: #b7472a;
+  color: white;
+  font-size: 22px;
+}
+
+.list1 {
+  display: block;
+}
+
+.list2 {
+  display: block;
+}
