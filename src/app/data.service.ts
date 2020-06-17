@@ -29,8 +29,45 @@ export class DataService {
     return this.noteData;
   }
 
-  deleteData() {
+  deleteData(id: number): Observable<HttpResponse<Data[]>> {
     console.log('DeleteData was called.');
-    // this.http.delete(localUrl, { id: '2' });
+    return this.http.delete<Data[]>(localUrl + '/' + id, {
+      observe: 'response',
+    });
+  }
+
+  deleteNotesData(id: number) {
+    this.deleteData(id).subscribe((resp) => {
+      console.log(resp);
+    });
+    console.log(this.noteData);
+  }
+
+  putData(data: Data) {
+    console.log('putData from service was called');
+    var response = this.http.put(localUrl + '/' + data.id, data);
+    console.log(response);
+    console.log(
+      response.subscribe((resp) => {
+        console.log(resp);
+      })
+    );
+  }
+
+  // putNotesData() {
+  //   console.log('PutNotesData from service was called');
+  //   this.putData();
+  //   console.log('called putData');
+  // }
+
+  postData(data: Data) {
+    console.log('Post data was called inside DataService');
+    var response = this.http.post(localUrl, data);
+    console.log(response);
+    console.log(
+      response.subscribe((resp) => {
+        console.log(resp);
+      })
+    );
   }
 }

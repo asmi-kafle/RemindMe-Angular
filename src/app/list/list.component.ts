@@ -8,8 +8,22 @@ import { DataService } from '../data.service';
   styleUrls: ['./list.component.css'],
 })
 export class ListComponent implements OnInit {
-  dataList: Data[];
+  dataList: Data[] = [];
+  inputData: Data = {
+    id: null,
+    Title: '',
+    Content: '',
+  };
+
   constructor(private dataService: DataService) {}
+  postDataFunc() {
+    var title = prompt('Please enter your the Title');
+    var content = prompt('Please enter Content');
+    this.inputData.id = Math.random();
+    this.inputData.Title = title;
+    this.inputData.Content = content;
+    this.dataService.postData(this.inputData);
+  }
 
   ngOnInit(): void {
     this.dataList = this.dataService.getNotesData();
