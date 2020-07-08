@@ -1,4 +1,4 @@
-# RemindMe
+# RemindMe - Frontend
 
 **Note taking app built with Angular frontend and .Net backend and SQL database for asset management**
 

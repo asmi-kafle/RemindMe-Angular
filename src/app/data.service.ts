@@ -47,6 +47,7 @@ export class DataService {
     this.deleteData(id).subscribe((resp) => {
       console.log(resp);
     });
+    location.reload();
     console.log(this.noteData);
   }
 
@@ -61,6 +62,7 @@ export class DataService {
         console.log(resp);
       })
     );
+    location.reload();
   }
 
   // HTTP Post Request
@@ -74,5 +76,6 @@ export class DataService {
         console.log(resp);
       })
     );
+    location.reload();
   }
 }
