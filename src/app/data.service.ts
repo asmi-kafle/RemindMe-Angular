@@ -3,7 +3,7 @@ import { Data } from './data.model';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const localUrl = 'https://localhost:44361/api/notes';
+const localUrl = 'https://localhost:44361/api/notes'; //URL where the API listens to calls
 
 @Injectable({
   providedIn: 'root',
@@ -59,6 +59,8 @@ export class DataService {
       })
     );
   }
+
+  // HTTP Post Request
 
   postData(data: Data) {
     console.log('Post data was called inside DataService');
