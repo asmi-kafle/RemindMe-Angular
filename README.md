@@ -1,5 +1,28 @@
 # RemindMe
 
+**Note taking app built with Angular frontend and .Net backend and SQL database for asset management**
+
+- this application implements HTTP requests against a .NET WEB API
+- the HTTP requests are translated to CRUD operations by the backend API to return data models from a SQL server
+- the return data models are converts into note components
+- the note components are dynamically generated and rendered on screen
+- each note component has a note title and a task list.
+- users create new note with a title and a task by clicking the "Add New Note" button, which creates an alert with input fields.
+- more tasks can then be added by pressing the "Update Note" button.
+- each note component can be deleted by clicking the delete icon next to the note title
+
+# **TO DO**
+
+- check boxes need to be implemented, to strike through completed task
+- delete icon needs to be added next to each task to delete individual task
+- new task can be made more visually appealing and user-friendly by taking in the input through an input box which directly makes HTTP Post request to the server instead of using a "Add New Task" button
+
+##
+
+# **To run the Angular application:**
+
+##
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
 ## Development server
