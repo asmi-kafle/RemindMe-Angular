@@ -8,12 +8,13 @@
 - the note components are dynamically generated and rendered on screen
 - each note component has a note title and a task list.
 - users create new note with a title and a task by clicking the "Add New Note" button, which creates an alert with input fields.
-- more tasks can then be added by pressing the "Update Note" button.
+- tasks can be edited by pressing the "Update Note" button.
 - each note component can be deleted by clicking the delete icon next to the note title
 
 # **TO DO**
 
 - check boxes need to be implemented, to strike through completed task
+- add functionality to add new tasks to existing note
 - delete icon needs to be added next to each task to delete individual task
 - new task can be made more visually appealing and user-friendly by taking in the input through an input box which directly makes HTTP Post request to the server instead of using a "Add New Task" button
 
