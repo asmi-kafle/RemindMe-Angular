@@ -1,6 +1,8 @@
 <div class="card">
   <h1>
     <b> {{ notes.Title }} </b>
+
+    <!-- The delete button inside individual "sticky" notes implements Delete Request -->
     <button
       class="deleteNoteBtn"
       (click)="deleteDataFunc()"
@@ -13,6 +15,8 @@
   <div class="container">
     <h4>{{ notes.Content }}</h4>
   </div>
+
+  <!-- The add new task button implements Put Reuqest -->
   <button class="newNoteBtn" (click)="putDataFunc()" style="font-size: 20px;">
     Update Card <i class="fa fa-plus fa-2x"></i>
   </button>

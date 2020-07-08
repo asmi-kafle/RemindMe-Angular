@@ -16,6 +16,9 @@ export class ListComponent implements OnInit {
   };
 
   constructor(private dataService: DataService) {}
+
+  // HTTP Post request
+
   postDataFunc() {
     var title = prompt('Please enter your the Title');
     var content = prompt('Please enter Content');
@@ -26,6 +29,8 @@ export class ListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // instantiates Service class to call the class's getNotesData method.
+    // This get method performs HTTP get request on the database and returns the list of enttities.
     this.dataList = this.dataService.getNotesData();
     console.log(
       'Education has been created with this educationData',

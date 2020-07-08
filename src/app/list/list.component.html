@@ -1,7 +1,9 @@
+<!-- Gets all the notes from the database. Implements Get Reqest -->
 <div class="list1">
   <app-cards [notes]="d" *ngFor="let d of dataList"> </app-cards>
 </div>
 
+<!-- Add new Note button implements Post Request -->
 <div class="list2">
   <button class="newNoteBtn" (click)="postDataFunc()">
     <a href=""></a> Add New Note <i class="fa fa-plus fa-2x"></i>
